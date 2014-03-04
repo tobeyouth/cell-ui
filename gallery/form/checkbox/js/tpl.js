@@ -7,7 +7,7 @@
  * by tobeyouth
  */
 define(function (require,exports,module) {
-	var tpl = 	'<div class="J_form_checkbox<%= disabled ? " J_form_checkbox_disabled" : "" %> <%= checked ? " J_form_checkbox_checked" : "" %>" data-id="<%= id %>" data-name="<%= name %>">'+
+	var tpl = 	'<div class="cell_checkbox <%= disabled ? " cell_checkbox_disabled" : "" %> <%= checked ? " cell_checkbox_checked" : "" %>" data-id="<%= id %>" data-name="<%= name %>">'+
 					'<em class="icons"></em>'+
 					'<span class="text"><%= text %></span>' + 
 				'</div>';

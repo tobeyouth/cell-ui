@@ -13,8 +13,8 @@ define(function (require,exports,module) {
 			'target' : null,
 			'check' : null,
 			'cancel' : null,
-			'hoverClass' : 'cf_checkbox_hover',
-			'checkedClass' : 'cf_checkbox_checked'
+			'hoverClass' : 'cell_checkbox_hover',
+			'checkedClass' : 'cell_checkbox_checked'
 		};
 
 	function CheckBoxes(config) {
