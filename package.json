@@ -1,5 +1,5 @@
 {
-  "name": "cell ui",
+  "name": "cell-ui",
   "version" : "0.0.1",
   "description" : "component system from bootstrap and so on",
   "keywords" : ["bootstrap","js","css","seajs"],
@@ -17,18 +17,11 @@
     "grunt": "~0.4.1",
   	"grunt-banner": "~0.2.0",
   	"grunt-cmd-transport" : "~0.4.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-connect": "~0.6.0",
+    "grunt-cmd-concat" : "~0.2.7",
     "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-csslint": "~0.2.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-watch": "0.5.0",
     "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-sass": "~0.7.0",
-    "grunt-contrib-qunit": "~0.4.0",
+    "grunt-sass": "~0.11.0",
     "grunt-contrib-uglify": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.3",
     "grunt-csscomb": "~2.0.1"
   }
 }

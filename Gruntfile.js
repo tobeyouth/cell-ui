@@ -17,22 +17,25 @@ module.exports = function (grunt) {
 					"style" : "expanded"
 				},
 				"files" : {
-					""
+					"gallery/form/checkbox/css/checkbox.scss" : "gallery/form/checkbox/css/checkbox.css"
 				}
 			}
 		},
 		"transport" : {
 			"options" : {
-				"path" : "./../"
+				"path" :["./../"]
 			},
 			"src" : {
 				"options" : {
-					'idleading' : "<%= pkg.name %>"
+					'idleading' : "<%= pkg.name %>",
+					"debug" : false
 				},
 				"files" : {
-					"cwd" : "",
-					"src" : ["*/**/*.js","*/**/*.coffee"],
-					"dest" : "*/**/.sea-debug/<%= pkg.name %>"
+					"form" : {
+						"cwd" : "",
+						"src" : ["gallery/**/*.js","*/**/*.coffee"],
+						"dest" : ".sea-debug/<%= pkg.name %>"
+					}
 				}
 			}
 		},
@@ -45,8 +48,7 @@ module.exports = function (grunt) {
 						"cwd": "",
 						"src" : "./lib/",
 						"dest" : "./dest/"
-					},
-
+					}
 				]
 			}
 		},
@@ -69,9 +71,29 @@ module.exports = function (grunt) {
 			"assets": {
 				"src": ['docs/assets/js/application.js', 'docs/assets/js/customizer.js']
 			}
+		},
+		"uglify" : {
+			"options" : {
+				"report": "min"
+			},
+			"form" : {
+				"banner" : 	"/*!\n" + 
+							" * cell ui" + 
+							" * form 组件" +
+							"*/",
+				"src" : ".sea-debug/gallery/form/*/js/*.js",
+				"dest" : "dest/gallery/form/*/js/*.js"
+			}
 		}
 	});
+	
+	grunt.loadNpmTasks('grunt-cmd-transport');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-csscomb');
 
-
-
+	// 测试压缩与合并
+	grunt.registerTask('build',["sass","transport"]);
 };
