@@ -1,0 +1,32 @@
+.cell_checkbox:hover, .cell_checkbox_hover {
+  background: #f1f3f7; }
+
+.cell_checkbox:hover .icons, .cell_checkbox_hover .icons {
+  background: url(/login/util/form/checkbox/images/checkbox.png) 0px -17px no-repeat; }
+
+.cell_checkbox {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 10px 0px 32px;
+  border-radius: 4px;
+  position: relative;
+  *zoom: 1;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666; }
+
+.cell_checkbox .icons {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 10px;
+  top: 7px;
+  background: url(/login/util/form/checkbox/images/checkbox.png) 0px 0px no-repeat; }
+
+.cell_checkbox_checked .icons {
+  background: url(/login/util/form/checkbox/images/checkbox.png) 0px -34px no-repeat; }
+
+.cell_checkbox_disabled .icons {
+  background: url(/login/util/form/checkbox/images/checkbox.png) 0px -51px no-repeat; }

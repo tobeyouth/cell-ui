@@ -1,0 +1,51 @@
+%hover-icon {
+	background:url(/login/util/form/radio/images/radio.png) 0px -17px no-repeat;
+}
+%gray-text {
+	color:#999;
+}
+
+.J_form_radio {
+	display:inline-block;
+	height: 24px;
+	line-height: 24px;
+	padding:6px 0px 6px 20px;
+	position: relative;
+	*zoom: 1;
+	z-index: 1;
+	font-size: 16px;
+	font-family: 'Microsoft YaHei';
+	color: #b3bbcc;
+	cursor: pointer;
+	
+	.icons {
+		width:16px;
+		height:16px;
+		display:block;
+		position:absolute;
+		z-index:1;
+		left:0px;
+		top:10px;
+		background:url(/login/util/form/radio/images/radio.png) 0px 0px no-repeat;
+	}
+
+	&:hover .icons {
+		@extend %hover-icon;
+	}
+
+	&:hover .text {
+		@extend %gray-text;
+	}
+}
+.J_form_radio_hover .icons {
+	@extend %hover-icon;
+}
+.J_form_radio_checked .icons {
+	background:url(/login/util/form/radio/images/radio.png) 0px -34px no-repeat;
+}
+.J_form_radio_disabled .icons {
+	background:url(/login/util/form/radio/images/radio.png) 0px -51px no-repeat;
+}
+.J_form_radio_hover .text ,.J_form_radio_checked .text {
+	@extend %gray-text;
+}

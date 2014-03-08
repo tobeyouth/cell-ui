@@ -1,0 +1,27 @@
+{
+  "name": "cell-ui",
+  "version" : "0.0.1",
+  "description" : "component system from bootstrap and so on",
+  "keywords" : ["bootstrap","js","css","seajs"],
+  "author": "tobeyouth",
+  "homepage" : "https://github.com/tobeyouth/cell-ui",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+  	"grunt-banner": "~0.2.0",
+  	"grunt-cmd-transport" : "~0.4.0",
+    "grunt-cmd-concat" : "~0.2.7",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-sass": "~0.11.0",
+    "grunt-contrib-uglify": "~0.3.0",
+    "grunt-csscomb": "~2.0.1"
+  }
+}

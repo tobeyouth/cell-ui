@@ -1,0 +1,46 @@
+#eclipse files
+.project
+.settings
+
+#webstorm
+.idea/
+.iml
+*.iml
+*.tmp
+
+
+
+# temp files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+#log files
+.log
+
+# project specific ignore
+add-on/
+node_modules/
+build/*
+docs/*
+!.placeholder
+
+# Vim swap files
+*.sw*
+
+# grunt tools
+sea-debug
+.sea-debug/*
+.dist/*
+
+
+
+#
+*.orig
+dev.setting
+developer.json
+grunt_bin.*
+
+
+*.php
+*.psd

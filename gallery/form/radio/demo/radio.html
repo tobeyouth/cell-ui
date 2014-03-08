@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>radio</title>
+	<link rel="stylesheet" type="text/css" href="http://assets.dajieimg.com/css/dajie.56160.css"/>
+	<link rel="stylesheet" type="text/css" href="http://static.dajieimg.com.ui/login/util/form/radio/css/radio.css"/>
+	<script type="text/javascript" src="http://assets.dajieimg.com/js/dajie.56160.js"></script>
+	<script type="text/javascript" src="http://assets.dajieimg.com/static/libs/seajs/sea.54668.js"></script>
+</head>
+<body>
+	<style>
+		.wrap {width: 200px;text-align:center;padding:50px 10px;border: 1px solid #333;margin:100px auto;}
+	</style>
+	<div class="wrap">
+		<form action="">
+			<label for="male">
+				<input id="male" value="1" type="radio" name="sex">男
+			</label>
+			<label for="female">
+				<input type="radio" value="2" name="sex" id="female">女
+			</label>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		seajs.config({
+			'alias' : {
+				'radio' : 'http://static.dajieimg.com.ui/login/util/form/radio/js/radio.js'
+			}
+		})
+		seajs.use('radio',function (radio) {
+			radio.createRadios({
+				'name' : 'sex',
+				'change' : function () {
+				}
+			});
+		});
+	</script>
+</body>
+</html>
